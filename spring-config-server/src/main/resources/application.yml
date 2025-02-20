@@ -1,0 +1,18 @@
+
+spring:
+  application:
+    name: CONFIG-SERVER
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Mohammed-Masood-Ansari/config-server
+          clone-on-start: true
+          default-label: main
+eureka:
+ client:
+    service-url:
+      defaultzone: http://localhost:8761/eureka/
+
+server:
+  port: 8888

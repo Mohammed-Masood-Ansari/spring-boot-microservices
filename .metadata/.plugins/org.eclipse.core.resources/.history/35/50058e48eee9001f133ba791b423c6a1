@@ -1,0 +1,27 @@
+server:
+  port: 9191
+spring:
+  application:
+    name: api-gateway
+  main:
+    web-application-type: reactive
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          lower-case-service-id: true
+          enabled: true
+     # routes:
+#      - id: employee-service
+#        uri: lb://EMPLOYEE-SERVICE
+#        predicates:
+#        - Path=/employeeservice/**
+#        
+#      - id: department-service
+#        uri:  lb://DEPARTMENT-SERVICE
+#        predicates:
+#        -  Path=/departmentservice/**    
+eureka:
+ client:
+    service-url:
+      defaultzone: http://localhost:8761/eureka/

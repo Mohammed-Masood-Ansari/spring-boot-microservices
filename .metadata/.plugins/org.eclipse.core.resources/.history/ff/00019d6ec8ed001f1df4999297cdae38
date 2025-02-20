@@ -1,0 +1,5 @@
+package com.ansari.department_service.controller;
+
+public class MessageController {
+
+}
